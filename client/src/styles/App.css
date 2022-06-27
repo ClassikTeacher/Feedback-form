@@ -1,0 +1,128 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eee;
+}
+
+.feedbackFormContainer{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 600px;
+  min-height: 600px;
+  padding: 10px 35px;
+  border-radius: 15px;
+  background: #ccc;
+}
+
+.feedbackForm__response{
+  font-size: 16px;
+  padding: 5px 10px;
+  visibility: visible;
+}
+
+.feedbackForm__response_visible{
+  font-size: 16px;
+  padding: 5px 10px;
+  visibility: visible;
+}
+
+.feedbackForm__wrapper{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #29282892;
+  border-radius: 15px;
+  visibility: hidden;
+}
+
+.feedbackForm__wrapper._active{
+
+  visibility: visible;
+}
+
+.feedback{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+ 
+}
+.feedback h1{
+  
+}
+
+.feedback__inputWrapper{
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+  align-items: flex-start;
+  margin: 5px;
+}
+
+.feedback__input{
+  min-width: 50%;
+  height: 25px;
+  padding: 2px 5px;
+  font-size: 14px;
+  border-radius: 5px;
+  
+}
+.feedback__input.__fullName{
+  text-transform: uppercase;
+}
+
+.feedback__inputMessage{
+  min-width: 100%;
+  height: 150px;
+  padding: 2px 5px;
+  font-size: 14px;
+  resize: none;
+  border-radius: 5px;
+}
+
+.feedback__label{
+  padding: 5px 10px;
+  font-size: 16px;
+
+}
+
+.feedback__errorLabel{
+  padding: 3px 10px;
+  font-size: 12px;
+  color: rgb(186, 37, 37);
+  visibility: hidden;
+}
+.feedback__errorLabel_visible{
+  visibility: visible;
+  padding: 3px 10px;
+  font-size: 12px;
+  color: rgb(186, 37, 37);
+}
+
+.feedback__button{
+   width: 120px;
+   height: 50px;
+   border-radius: 5px;
+   font-size: 18px;
+   font-weight: 600;
+   color: teal;
+   border: 2px solid teal;
+   background: none;
+   cursor: pointer;
+}
