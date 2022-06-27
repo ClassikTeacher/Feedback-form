@@ -5,7 +5,6 @@ import './styles/App.css';
 
 function App() {
 
-  console.log('1')
   return (
     <div className="App">
       <FeedbackFormContainer />

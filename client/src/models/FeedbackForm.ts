@@ -87,11 +87,6 @@ export class Feedback {
     }
 
     async sendForm(){
-        console.log(this.validFullname(this.fullName))
-        console.log(this.validEmail(this.email))
-        console.log(this.validPhone(this.phone))
-        console.log(this.validDate(this.dateOfBirth))
-        console.log(this.validMessage(this.message))
         const check = this.validAllForm()
       
         if(check){
@@ -99,7 +94,6 @@ export class Feedback {
            
           
                 const res = (await FeedbackService.sendFeedbackForm(this.fullName, this.email, this.phone, date, this.message))
-                console.log((await res))
                 const resMessahe = res.data.message
                 return  res
            

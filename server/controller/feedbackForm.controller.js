@@ -11,7 +11,7 @@ class FeedbackFormController{
             return res.json({message: 'error'})
             
         }catch(e){
-            console.log(e)
+
             res.json({message: 'error'})
         }
         
@@ -22,7 +22,7 @@ class FeedbackFormController{
             res.header("Access-Control-Allow-Origin", "*")
             res.json({message: 'success'})
         }catch(e){
-            console.log(e)
+
             res.json({message: 'error'})
         }
     }
